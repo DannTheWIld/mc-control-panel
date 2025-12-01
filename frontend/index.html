@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Minecraft Control Panel</h2>
+
+<div id="login">
+    <input id="password" type="password" placeholder="Panel password">
+        <button onclick="login()">Login</button>
+</div>
+
+<div id="run command" style="display:none;">
+    <input id="cmd" placeholder="Enter command">
+        <button onclick="runCmd()">Run</button>
+        <pre id="output"></pre>
+</div>
+
+<div id="pages" style="display:none;">
+    <button onclick="managePlayersPage()" id="MPP-B">Manage Players</button>
+</div>
+
+<div id="MPP" style="display:none;">
+    <h3>Manage Players</h3>
+    <button onclick="sendCmd('')">Tp player to spawn</button>
+</div>
+
+<script src="panel.js"></script>
+</body>
+</html>
